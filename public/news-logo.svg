@@ -1,0 +1,17 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with teal color matching the design -->
+  <rect width="120" height="40" rx="4" fill="#2c6975"/>
+  
+  <!-- TAKA text -->
+  <text x="15" y="25" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">TAKA</text>
+  
+  <!-- Circular logo element -->
+  <circle cx="85" cy="20" r="12" fill="white"/>
+  <circle cx="85" cy="20" r="10" fill="#2c6975"/>
+  <path d="M82 16 L88 20 L82 24 Z" fill="white"/>
+  <path d="M85 14 L85 26 M79 20 L91 20" stroke="white" stroke-width="1.5" opacity="0.7"/>
+  
+  <!-- POST text -->
+  <text x="95" y="18" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">P</text>
+  <text x="95" y="30" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">ST</text>
+</svg>
