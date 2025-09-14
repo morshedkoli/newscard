@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useEffect, forwardRef } from 'react';
+import { forwardRef } from 'react';
 import { PhotoCardData, BrandingConfig, CardDimensions } from '@/types';
 
 interface PhotoCardPreviewProps {
@@ -11,7 +11,7 @@ interface PhotoCardPreviewProps {
 
 const PhotoCardPreview = forwardRef<HTMLDivElement, PhotoCardPreviewProps>(
   ({ data, branding, dimensions }, ref) => {
-    const { image, imageUrl, headline } = data;
+    const { imageUrl, headline } = data;
 
     // Calculate dynamic heights based on headline length for preview only
     const getHeaderHeight = () => {
@@ -119,6 +119,7 @@ const PhotoCardPreview = forwardRef<HTMLDivElement, PhotoCardPreviewProps>(
                 })}
               </div>
               <div className="flex items-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={branding.logo}
                   alt="Channel Logo"

@@ -12,7 +12,7 @@ body {
 }
 
 .bengali-text {
-  font-family: 'Galada', var(--font-noto-sans-bengali), 'Kalpurush', 'SolaimanLipi', Arial, sans-serif;
+  font-family: var(--font-galada), var(--font-noto-sans-bengali), 'Kalpurush', 'SolaimanLipi', Arial, sans-serif;
   font-weight: 400;
   line-height: 1.4;
 }

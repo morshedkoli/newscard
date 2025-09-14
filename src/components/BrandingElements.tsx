@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { BrandingConfig } from '@/types';
 
 interface BrandingElementsProps {
@@ -26,10 +27,12 @@ export default function BrandingElements({ config, className = "" }: BrandingEle
   return (
     <div className={`absolute ${getPositionClasses()} ${className}`}>
       <div className="flex items-center bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
-        <img
+        <Image
           src={config.logo}
           alt="Channel Logo"
-          className="h-6 w-auto mr-2"
+          width={24}
+          height={24}
+          className="w-auto mr-2"
         />
         <span className="text-sm font-bold text-gray-800">
           {config.channelName}

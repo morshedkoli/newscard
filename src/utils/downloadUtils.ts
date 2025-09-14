@@ -75,7 +75,7 @@ export const downloadPhotoCard = async (
           }
         });
       }
-    } as any);
+    });
 
     // Remove downloading class
     element.classList.remove('downloading');
@@ -139,7 +139,7 @@ export const generatePreviewDataURL = async (
       allowTaint: true,
       width: options.width,
       height: options.height,
-    } as any);
+    });
 
     return canvas.toDataURL(
       options.format === 'jpeg' ? 'image/jpeg' : 'image/png',

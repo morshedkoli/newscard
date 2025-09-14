@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_Bengali } from "next/font/google";
+import { Galada } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -11,6 +12,12 @@ const notoSansBengali = Noto_Sans_Bengali({
   variable: "--font-noto-sans-bengali",
   subsets: ["bengali"],
   weight: ["400", "500", "600", "700"],
+});
+
+const galada = Galada({
+  variable: "--font-galada",
+  subsets: ["bengali"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,13 +32,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet" />
-      </head>
       <body
-        className={`${inter.variable} ${notoSansBengali.variable} antialiased`}
+        className={`${inter.variable} ${notoSansBengali.variable} ${galada.variable} antialiased`}
       >
         {children}
       </body>

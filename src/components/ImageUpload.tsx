@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useState } from 'react';
+import Image from 'next/image';
 import { PhotoCardData } from '@/types';
 
 interface ImageUploadProps {
@@ -111,9 +112,11 @@ export default function ImageUpload({ onImageChange, currentImage }: ImageUpload
         {currentImage ? (
           <div className="space-y-2">
             <div className="relative w-32 h-20 mx-auto rounded overflow-hidden">
-              <img
+              <Image
                 src={currentImage}
                 alt="Uploaded preview"
+                width={128}
+                height={80}
                 className="w-full h-full object-cover"
               />
             </div>
