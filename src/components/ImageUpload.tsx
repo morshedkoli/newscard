@@ -158,6 +158,25 @@ export default function ImageUpload({ onImageChange, currentImage }: ImageUpload
           {error}
         </div>
       )}
+
+      {/* Ideal Image Size Information */}
+      <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="flex items-start space-x-2">
+          <div className="flex-shrink-0 mt-0.5">
+            <svg className="h-4 w-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h4 className="text-sm font-medium text-blue-800 mb-1">💡 Ideal Image Size</h4>
+            <div className="text-xs text-blue-700 space-y-1">
+              <p><span className="font-medium">Recommended:</span> 1200 × 630 pixels or higher</p>
+              <p><span className="font-medium">Aspect Ratio:</span> 1.91:1 (landscape)</p>
+              <p><span className="font-medium">Best Quality:</span> High resolution images work best</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -11,9 +11,9 @@ import { downloadPhotoCard } from '@/utils/downloadUtils';
 import { PhotoCardData, CardDimensions } from '@/types';
 
 const defaultDimensions: CardDimensions = {
-  width: 800,
-  height: 800,
-  aspectRatio: '1/1'
+  width: 1200,
+  height: 630,
+  aspectRatio: '1.91/1'
 };
 
 export default function Home() {
